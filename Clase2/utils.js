@@ -1,3 +1,1 @@
-export default function suma(a, b) {
-    
-}
+export default function suma(a, b) {}
