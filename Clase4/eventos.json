@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "nombre": "Evento 1",
+    "lugar": "teatro",
+    "precio": 115,
+    "capacidad": 50,
+    "fecha": "6/22/2023",
+    "participantes": []
+  },
+  {
+    "id": 2,
+    "nombre": "Evento",
+    "lugar": "teatro",
+    "precio": 11.5,
+    "capacidad": 200,
+    "fecha": "6/22/2023",
+    "participantes": []
+  },
+  {
+    "id": 3,
+    "nombre": "Evento 1",
+    "lugar": "teatro",
+    "precio": 115,
+    "capacidad": 50,
+    "fecha": "6/22/2023",
+    "participantes": []
+  },
+  {
+    "id": 4,
+    "nombre": "Evento 2",
+    "lugar": "teatro",
+    "precio": 23,
+    "capacidad": 200,
+    "fecha": "6/22/2023",
+    "participantes": []
+  },
+  {
+    "id": 5,
+    "nombre": "Evento",
+    "lugar": "teatro",
+    "precio": 11.5,
+    "capacidad": 200,
+    "fecha": "6/22/2023",
+    "participantes": []
+  },
+  {
+    "id": 6,
+    "nombre": "Evento 1",
+    "lugar": "teatro",
+    "precio": 115,
+    "capacidad": 50,
+    "fecha": "6/22/2023",
+    "participantes": []
+  },
+  {
+    "id": 7,
+    "nombre": "Evento 2",
+    "lugar": "teatro",
+    "precio": 23,
+    "capacidad": 200,
+    "fecha": "6/22/2023",
+    "participantes": []
+  },
+  {
+    "id": 8,
+    "nombre": "Evento",
+    "lugar": "teatro",
+    "precio": 11.5,
+    "capacidad": 200,
+    "fecha": "6/22/2023",
+    "participantes": []
+  },
+  {
+    "id": 9,
+    "nombre": "Evento 1",
+    "lugar": "teatro",
+    "precio": 115,
+    "capacidad": 50,
+    "fecha": "6/22/2023",
+    "participantes": []
+  },
+  {
+    "id": 10,
+    "nombre": "Evento 2",
+    "lugar": "teatro",
+    "precio": 23,
+    "capacidad": 200,
+    "fecha": "6/22/2023",
+    "participantes": []
+  },
+  {
+    "id": 11,
+    "nombre": "Evento",
+    "lugar": "teatro",
+    "precio": 11.5,
+    "capacidad": 200,
+    "fecha": "6/22/2023",
+    "participantes": []
+  },
+  {
+    "id": 12,
+    "nombre": "Evento 1",
+    "lugar": "teatro",
+    "precio": 115,
+    "capacidad": 50,
+    "fecha": "6/22/2023",
+    "participantes": []
+  },
+  {
+    "id": 13,
+    "nombre": "Evento 2",
+    "lugar": "teatro",
+    "precio": 23,
+    "capacidad": 200,
+    "fecha": "6/22/2023",
+    "participantes": []
+  },
+  {
+    "id": 14,
+    "nombre": "Evento",
+    "lugar": "teatro",
+    "precio": 11.5,
+    "capacidad": 200,
+    "fecha": "6/22/2023",
+    "participantes": []
+  },
+  {
+    "id": 15,
+    "nombre": "Evento 1",
+    "lugar": "teatro",
+    "precio": 115,
+    "capacidad": 50,
+    "fecha": "6/22/2023",
+    "participantes": []
+  },
+  {
+    "id": 16,
+    "nombre": "Evento 2",
+    "lugar": "teatro",
+    "precio": 23,
+    "capacidad": 200,
+    "fecha": "6/22/2023",
+    "participantes": []
+  }
+]
