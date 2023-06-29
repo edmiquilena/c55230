@@ -1,7 +1,6 @@
 {
   "name": "co55230",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -17,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/edmiquilena/c55230/issues"
   },
-  "homepage": "https://github.com/edmiquilena/c55230#readme"
+  "homepage": "https://github.com/edmiquilena/c55230#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.2",
+    "moment": "^2.29.4"
+  }
 }
