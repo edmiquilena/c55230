@@ -1,0 +1,36 @@
+[
+  {
+    "nombre": "Eduardo",
+    "apellido": "M",
+    "id": 1,
+    "calificacion": 10,
+    "username": "eduardo",
+    "password": "353f1d23b645515f8612b5954b75f56b9b7a2321230eb2a2b950f12fd40ef590",
+    "salt": "V14Ms9LhR0G+CktVCh7yTOekp53fOdMBPHF0kq/GkrHyLAKxSIzlZUZjiVGwlFtpOB1ZAcR/13GrScQrVULL2TQ70hDz3CPOLj9NvMq+/GF2Q5Op99rfg2DI+sydnJVVYF4bEBXrkRI0l3Jfi9ExnBGlCILwwd8FxigXDBml2oQ="
+  },
+  {
+    "id": 2,
+    "nombre": "Eduardo 2",
+    "apellido": "M",
+    "calificacion": 8,
+    "username": "eduardo2",
+    "password": "3fa20707f9fe7920b1f758d9cd79e6f25d64c5234eeff66d33fcd3c5365b2e66",
+    "salt": "seUrlUdtBXvylE2R9sNxA2zmJ/KefT8ShqSlz2UmT1lo89AZw+diPeKiP8wPRQ/px6Cc4JSorYRSoB0nvzLM/dIAU9HQudeSLVtcEyKAlWkFEUbHbY8VP/Ugn2yBi5FC5+XimaRcmWQpqeTBz+KmNvz9qgTDo9Oi38A4scLxP3M="
+  },
+  {
+    "id": 3,
+    "nombre": "Eduardo 3",
+    "apellido": "M",
+    "calificacion": 10,
+    "username": "eduardo4",
+    "password": "07b5a818487d458ee9bd546d4dcd07f75e9af26d8f9e7c0634e3038e1ea7f52f",
+    "salt": "ubLE//1Y8HT4uFP6ACPnr89K3daefAQaQ+OoxWruh5ypgX4IVIDhh1uPguOeIH4HFq6lm5HehGNkin9T1IkzuKr0wIDD3KnRgxk3Z5ZvJkrM/4hprODq7MhSgW2Bf3YS50uRX2GgJ64EbWNsFH06uva4EJoALk+jlNWeO0eB2yc="
+  },
+  {
+    "nombre": "Eduardo5",
+    "apellido": "M",
+    "password": "1a773753faa52752b7eaf26dd5ebaf08d2ce3c5b83ba4b6ad8c116402072725d",
+    "username": "eduardo5",
+    "salt": "92xP8JguoF/4ygfPwwP8UBD1QxRdJRZdi1fXzRtdoWIIGMBZKHJbeugkxZQAazsopPJriqUlt0nmezgErtKQpW601M1VdVu14OdZHMVSWzDreBQgl9ETzpOBSFJENL5VMLCWSRzl7Jwur8gm1FiNuiRRMcjDmyAIbJaKw6lpa8g="
+  }
+]

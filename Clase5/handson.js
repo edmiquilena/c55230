@@ -1,7 +1,7 @@
 import fs from "fs";
 import crypto from "crypto";
 
-class userManager {
+export default class userManager {
   constructor(file) {
     this.file = file;
   }
@@ -16,6 +16,7 @@ class userManager {
       return [];
     }
   }
+
   // minor
   async updateUser() {}
   // * usuario = {nombre, apellido, username, password}
@@ -52,15 +53,3 @@ class userManager {
       : "usuario/contrase;a incorrecta";
   }
 }
-const users = new userManager("./usuarios.json");
-try {
-  await users.crearUsuario({
-    nombre: "Eduardo 3",
-    apellido: "M",
-    username: "eduardo4",
-    password: "coder1234",
-  });
-
-  const login = await users.validarUsuario("eduardo", "coder1234");
-  console.log(login);
-} catch (e) {}
