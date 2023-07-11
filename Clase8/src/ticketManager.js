@@ -1,10 +1,13 @@
 import fs from "fs/promises";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+const __dirname = dirname(fileURLToPath(import.meta.url));
 export default class TicketManager {
   #precioBaseGanacia = 0.15;
   // *
   // [{id: 1}, {id: 2}, {id: 2}]
   constructor(path) {
-    this.path = `./db/${path}.json`;
+    this.path = `${__dirname}/db/${path}.json`;
     this.eventos = [];
   }
 

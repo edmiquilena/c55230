@@ -1,9 +1,11 @@
 import fs from "fs";
 import crypto from "crypto";
-
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+const __dirname = dirname(fileURLToPath(import.meta.url));
 export default class UserManager {
   constructor(file) {
-    this.file = `./db/${file}.json`;
+    this.file = `${__dirname}/db/${file}.json`;
   }
 
   async getUsuarios() {

@@ -10,16 +10,15 @@ usuariosRouter.get("/", async (req, res) => {
 });
 
 // * crearUsuario(usuario)
-usuariosRouter.post("/", upload.single("thumbnail"), async (req, res) => {
+usuariosRouter.post("/", async (req, res) => {
   try {
     // if (!req.file.filename) return res.send("Archivo no se ha identificado!");
     const usuario = req.body;
-    if (req.file.filename) {
-      usuario.thumbnail = req.file.filename;
-    }
+
     await db.crearUsuario(usuario);
     res.send({ msg: "usuario creado!" });
   } catch (e) {
+    console.log(e);
     res.status(502).send({ msg: "error al crear usuario!" });
   }
 });
