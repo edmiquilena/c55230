@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "nombre": "Imagine Dragons fecha 100",
+    "lugar": "teatro principal",
+    "precio": 51.75,
+    "capacidad": 100000,
+    "fecha": "05/07/2023",
+    "participantes": []
+  }
+]
