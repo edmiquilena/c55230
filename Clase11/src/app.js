@@ -29,10 +29,20 @@ app.get("/chat", (req, res) => {
 
 //* BACK
 
-const msg = [{ text: "hola mundo!", username: "eduardo" }];
+const msgDB = [
+  { text: "hola mundo!", username: "eduardo" },
+  { text: "hola mundo!", username: "Gabriela" },
+];
+
 io.on("connection", (socket) => {
   console.log(`socket conectado: ${socket.id}`);
-  socket.emit("historial", msg);
+  socket.emit("historial", msgDB);
+
+  socket.on("enviarMensaje", (msg) => {
+    console.log(msg);
+    msgDB.push({ text: msg, username: socket.id });
+    socket.broadcast.emit("recibirMensaje", { text: msg, username: socket.id });
+  });
 });
 
 httpServer.listen(8080, () => {});
