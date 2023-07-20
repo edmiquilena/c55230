@@ -2,19 +2,21 @@ import express from "express";
 import { Server as HTTPServer } from "http";
 import { Server as SocketIO } from "socket.io";
 import handlebars from "express-handlebars";
+import __dirname from "./dirname.js";
+
 // ? se inicializa express
 const app = express();
 
 // * handlebars
 
 app.engine("handlebars", handlebars.engine());
-app.set("views", `./views`);
+app.set("views", `${__dirname}/views`);
 app.set("view engine", "handlebars");
 
 const httpServer = HTTPServer(app);
 
 const io = new SocketIO(httpServer);
-app.use(express.static("./public"));
+app.use(express.static(`${__dirname}/public`));
 app.use((req, res, next) => {
   req.io = io;
   next();
@@ -45,4 +47,6 @@ io.on("connection", (socket) => {
   });
 });
 
-httpServer.listen(8080, () => {});
+httpServer.listen(8080, () => {
+  console.log("escuchando en el puerto 8080");
+});
