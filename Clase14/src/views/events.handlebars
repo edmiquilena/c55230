@@ -1,0 +1,20 @@
+{{#if isAdmin}}
+  <h1>Eventos en la ciudad:</h1>
+  {{#each events}}
+    <div><ul>
+        <li><b>nombre: </b>{{this.nombre}}</li>
+        <li><b>lugar: </b>{{this.lugar}}</li>
+        <li><b>precio: </b>{{this.precio}}</li>
+      </ul></div>
+  {{/each}}
+{{else}}
+
+  <div><b>Error!</b> No tienes acceso a esta informacion.</div>
+{{/if}}
+{{! "id": 1,
+    "nombre": "Imagine Dragons fecha 100",
+    "lugar": "teatro principal",
+    "precio": 51.75,
+    "capacidad": 100000,
+    "fecha": "05/07/2023",
+    "participantes": [] }}

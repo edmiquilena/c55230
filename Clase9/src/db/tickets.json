@@ -1,1 +1,110 @@
-[{"id":1,"nombre":"Imagine Dragons fecha 100","lugar":"teatro principal","precio":51.75,"capacidad":100000,"fecha":"05/07/2023","participantes":[]},{"id":2,"nombre":"Imagine Dragons fecha 200","lugar":"mini teatro","precio":11.5,"capacidad":1000,"fecha":"7/11/2023","participantes":[]},{"id":3,"nombre":"Maroon 5","lugar":"mini teatro","precio":11.5,"capacidad":1000,"fecha":"7/11/2023","participantes":[]},{"id":4,"nombre":"Maroon 5","lugar":"mini teatro","precio":11.5,"capacidad":1000,"fecha":"7/11/2023","participantes":[]},{"id":5,"nombre":"Maroon 5","lugar":"mini teatro","precio":11.5,"capacidad":1000,"fecha":"7/11/2023","participantes":[]},{"id":6,"nombre":"Maroon 5","lugar":"mini teatro","precio":11.5,"capacidad":1000,"fecha":"7/11/2023","participantes":[]},{"id":7,"nombre":"cantante","lugar":"estadium","precio":"507.5","capacidad":"100","fecha":"7/11/2023","participantes":[]},{"id":8,"nombre":"cantante 2","lugar":"estadium","precio":"203","capacidad":"10000","fecha":"7/11/2023","participantes":[]},{"id":9,"nombre":"cantante 2","lugar":"estadium","precio":"203","capacidad":"10000","fecha":"7/11/2023","participantes":[]},{"id":10,"nombre":"Maroon 5","lugar":"mini teatro","precio":11.5,"capacidad":1000,"fecha":"7/11/2023","participantes":[]},{"id":11,"nombre":"Maroon 5","lugar":"mini teatro","precio":11.5,"capacidad":1000,"fecha":"7/11/2023","participantes":[]},{"id":12,"nombre":"Maroon 5","lugar":"mini teatro","precio":11.5,"capacidad":1000,"fecha":"7/11/2023","participantes":[]}]
+[
+  {
+    "id": 1,
+    "nombre": "Imagine Dragons fecha 100",
+    "lugar": "teatro principal",
+    "precio": 51.75,
+    "capacidad": 100000,
+    "fecha": "05/07/2023",
+    "participantes": []
+  },
+  {
+    "id": 2,
+    "nombre": "Imagine Dragons fecha 200",
+    "lugar": "mini teatro",
+    "precio": 11.5,
+    "capacidad": 1000,
+    "fecha": "7/11/2023",
+    "participantes": []
+  },
+  {
+    "id": 3,
+    "nombre": "Maroon 5",
+    "lugar": "mini teatro",
+    "precio": 11.5,
+    "capacidad": 1000,
+    "fecha": "7/11/2023",
+    "participantes": []
+  },
+  {
+    "id": 4,
+    "nombre": "Maroon 5",
+    "lugar": "mini teatro",
+    "precio": 11.5,
+    "capacidad": 1000,
+    "fecha": "7/11/2023",
+    "participantes": []
+  },
+  {
+    "id": 5,
+    "nombre": "Maroon 5",
+    "lugar": "mini teatro",
+    "precio": 11.5,
+    "capacidad": 1000,
+    "fecha": "7/11/2023",
+    "participantes": []
+  },
+  {
+    "id": 6,
+    "nombre": "Maroon 5",
+    "lugar": "mini teatro",
+    "precio": 11.5,
+    "capacidad": 1000,
+    "fecha": "7/11/2023",
+    "participantes": []
+  },
+  {
+    "id": 7,
+    "nombre": "cantante",
+    "lugar": "estadium",
+    "precio": "507.5",
+    "capacidad": "100",
+    "fecha": "7/11/2023",
+    "participantes": []
+  },
+  {
+    "id": 8,
+    "nombre": "cantante 2",
+    "lugar": "estadium",
+    "precio": "203",
+    "capacidad": "10000",
+    "fecha": "7/11/2023",
+    "participantes": []
+  },
+  {
+    "id": 9,
+    "nombre": "cantante 2",
+    "lugar": "estadium",
+    "precio": "203",
+    "capacidad": "10000",
+    "fecha": "7/11/2023",
+    "participantes": []
+  },
+  {
+    "id": 10,
+    "nombre": "Maroon 5",
+    "lugar": "mini teatro",
+    "precio": 11.5,
+    "capacidad": 1000,
+    "fecha": "7/11/2023",
+    "participantes": []
+  },
+  {
+    "id": 11,
+    "nombre": "Maroon 5",
+    "lugar": "mini teatro",
+    "precio": 11.5,
+    "capacidad": 1000,
+    "fecha": "7/11/2023",
+    "participantes": []
+  },
+  {
+    "id": 12,
+    "nombre": "Maroon 5",
+    "lugar": "mini teatro",
+    "precio": 11.5,
+    "capacidad": 1000,
+    "fecha": "7/11/2023",
+    "participantes": []
+  }
+]

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="flex justify-center items-center h-screen">
+      <div class="grid gap-9">
+        <h1 class="text-white text-5xl">Join room</h1>
+        <input
+          type="text"
+          placeholder="Your name"
+          class="w-full focus:outline-none focus:placeholder-gray-400 text-gray-100 placeholder-gray-300 pl-12 bg-zinc-700 rounded-md py-3"
+        />
+        <button
+          type="button"
+          class="inline-flex items-center justify-center rounded-lg px-4 py-3 transition duration-500 ease-in-out text-black bg-brand-color hover:bg-blue-400 focus:outline-none"
+        >
+          <span class="font-bold">Join</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="h-6 w-6 ml-2 transform rotate-90"
+          >
+            <path
+              d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <style>
+      body {
+        background-color: #1f1f24;
+      }
+      .border-gray-200 {
+        border-color: #eaff6a;
+      }
+      .chat-color {
+        color: #fff;
+      }
+      .brand-color {
+        color: #eaff6a;
+      }
+      .bg-brand-color {
+        background-color: #eaff6a;
+      }
+      .scrollbar-w-2::-webkit-scrollbar {
+        width: 0.25rem;
+        height: 0.25rem;
+      }
+
+      .scrollbar-track-blue-lighter::-webkit-scrollbar-track {
+        --bg-opacity: 1;
+        background-color: #f7fafc;
+        background-color: rgba(247, 250, 252, var(--bg-opacity));
+      }
+
+      .scrollbar-thumb-blue::-webkit-scrollbar-thumb {
+        --bg-opacity: 1;
+        background-color: #edf2f7;
+        background-color: rgba(237, 242, 247, var(--bg-opacity));
+      }
+
+      .scrollbar-thumb-rounded::-webkit-scrollbar-thumb {
+        border-radius: 0.25rem;
+      }
+    </style>
+  </body>
+</html>
