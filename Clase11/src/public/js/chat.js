@@ -46,6 +46,10 @@ socket.on("recibirMensaje", (msg) => {
 });
 
 $(function () {
+  $("#formEvent").on("submit", function (evento) {
+    evento.preventDefault();
+    console.log(evento);
+  });
   $("#sendMsg").on("click", function () {
     const input = $("#message").val();
     $("#message").val("");

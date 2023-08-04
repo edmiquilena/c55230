@@ -5,13 +5,14 @@ import { fileURLToPath } from "url";
 import UserModel from "./schemas/user.model.js";
 import mongoose from "mongoose";
 const __dirname = dirname(fileURLToPath(import.meta.url));
-mongoose.connect(`URL MONGO`);
+
 export default class UserManager {
   constructor() {}
 
   async getUsuarios() {
     try {
-      const users = await UserModel.find();
+      const users = await UserModel.find({username: 'eduardo'});
+ 
       return users;
     } catch (e) {
       return [];
@@ -19,7 +20,17 @@ export default class UserManager {
   }
 
   // minor
-  async updateUser() {}
+  async updateUser(username, profile_picture) {
+
+const user = await UserModel.findOne({username})
+user.
+user.avatar = profile_picture;
+await user.save()
+const userObject = user.toObject()
+const userJSON = user.toJSON()
+
+  }
+
   // * usuario = {nombre, apellido, username, password, avatar}
   async crearUsuario(usuario) {
     usuario.salt = crypto.randomBytes(128).toString("base64");
@@ -27,6 +38,7 @@ export default class UserManager {
       .createHmac("sha256", usuario.salt)
       .update(usuario.password)
       .digest("hex");
+      UserModel.create(usuario)
     const user = await UserModel.insertMany([usuario]);
     return user;
   }

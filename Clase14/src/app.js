@@ -9,15 +9,11 @@ app.set("views", `${__dirname}/views`);
 app.set("view engine", "handlebars");
 
 app.get("/", (req, res) => {
-  const { nombre } = req.query;
-  for (let index = 0; index < 100000; index++) {
-    console.log(index);
-  }
-  res.render("index", {
-    nombre: nombre,
-    comision: 55230,
-    link: "https://google.com",
-  });
+  // const { nombre } = req.query;
+  // for (let index = 0; index < 100000; index++) {
+  //   console.log(index);
+  // }
+  res.render("newEvent", {});
 });
 
 const users = [

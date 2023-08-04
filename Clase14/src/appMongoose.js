@@ -1,10 +1,13 @@
 import express from "express";
 import mongoose from "mongoose";
-import UserModel from "./schemas/user.model.js";
+import UserModel from "./models/user.model.js";
 import usuariosRouter from "./routes/usuarios.js";
+import * as con from "./config.js";
 const app = express();
 
-const conn = await mongoose.connect(`URL MONGO`);
+const conn = await mongoose.connect(
+  `mongodb+srv://codercluster.hhamevg.mongodb.net/coder?retryWrites=true&w=majority`
+);
 
 // ? db.[nombre].insertOne()
 // ? db.[nombre].find()
