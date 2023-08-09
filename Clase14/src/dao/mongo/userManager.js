@@ -11,8 +11,8 @@ export default class UserManager {
 
   async getUsuarios() {
     try {
-      const users = await UserModel.find({username: 'eduardo'});
- 
+      const users = await UserModel.find({ username: "eduardo" });
+
       return users;
     } catch (e) {
       return [];
@@ -21,14 +21,13 @@ export default class UserManager {
 
   // minor
   async updateUser(username, profile_picture) {
-
-const user = await UserModel.findOne({username})
-user.
-user.avatar = profile_picture;
-await user.save()
-const userObject = user.toObject()
-const userJSON = user.toJSON()
-
+    const user = await UserModel.findOne({ username });
+    user.user.avatar = profile_picture;
+    await user.save();
+    const userObject = user.toObject();
+    const userJSON = user.toJSON();
+    const products = await model.find({});
+    res.render("index", { prod: products });
   }
 
   // * usuario = {nombre, apellido, username, password, avatar}
@@ -38,7 +37,7 @@ const userJSON = user.toJSON()
       .createHmac("sha256", usuario.salt)
       .update(usuario.password)
       .digest("hex");
-      UserModel.create(usuario)
+    UserModel.create(usuario);
     const user = await UserModel.insertMany([usuario]);
     return user;
   }
