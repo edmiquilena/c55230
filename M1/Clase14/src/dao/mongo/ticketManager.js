@@ -20,7 +20,7 @@ export default class TicketManager {
 
   getEventos = async () => {
     try {
-      const file = await fs.readFile(this.path, "utf8");
+      const file = await eventModel.find()
       const eventos = JSON.parse(file);
       return eventos;
     } catch (e) {

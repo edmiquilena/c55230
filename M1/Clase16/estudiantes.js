@@ -179,3 +179,31 @@ const students = [
     group: "1A",
   },
 ];
+
+
+const pizzaSchema = new mongoose.Schema({
+    name: String,
+    size: {
+      type: String,
+      enum: ["small", "medium", "large"],
+      default: "small",
+    },
+    price: Number,
+    quantity: Number,
+    Date: Date,
+  });
+  
+  const pizzaModel = mongoose.model("pizza", pizzaSchema);
+  
+  mongoose.connect(`mongodb://127.0.0.1:27017/coderhouse`);
+// * agrupemos por calificacion y sort
+  pizzaModel.aggregate([
+{
+    $group: {_id: "$grade", students: {$push: "$$ROOT"}}
+},
+
+{$sort: {_id: -1}}
+
+
+
+  ])

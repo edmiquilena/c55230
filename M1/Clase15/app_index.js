@@ -26,10 +26,9 @@ const userSchema = new mongoose.Schema({
 const userModel = mongoose.model("users", userSchema);
 // * find() => 3ms 0ms 2ms => 15ms
 // * find({first_name}) => 20ms 1ms
-const users = await userModel
-  .find({
-    first_name: "Jordon",
-    last_name: "Hun",
-  })
-  .explain("executionStats");
+const users = await userModel.find({
+  first_name: "Jordon",
+  last_name: "Hun",
+});
+
 console.log(users);

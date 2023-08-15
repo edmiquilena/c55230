@@ -3,11 +3,13 @@ import { Server as HTTPServer } from "http";
 import { Server as SocketIO } from "socket.io";
 import handlebars from "express-handlebars";
 import __dirname from "./dirname.js";
-
+import { SocketFn } from "./socketHandler.js";
 // ? se inicializa express
 const app = express();
 app.use(express.json());
 // * handlebars
+// * /?query=iphone&limit=3&sort=asc
+//* products/:id
 
 app.engine("handlebars", handlebars.engine());
 app.set("views", `${__dirname}/views`);
@@ -49,19 +51,8 @@ io.use((socket, next) => {
   next();
 });
 // * cliente
-io.on("connection", (cliente) => {
-  console.log("user", cliente.user.username);
-  console.log(`socket conectado: ${cliente.id}`);
-  cliente.emit("historial", msgDB);
 
-  cliente.on("enviarMensaje", (data) => {
-    console.log(data);
-    const { msg, username } = data;
-    console.log(msg);
-    msgDB.push({ text: msg, username });
-    cliente.broadcast.emit("recibirMensaje", { text: msg, username });
-  });
-});
+io.on("connection", SocketFn);
 
 httpServer.listen(8080, () => {
   console.log("escuchando en el puerto 8080");
