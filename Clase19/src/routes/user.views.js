@@ -35,11 +35,13 @@ userRouter.get("/profile", protectView, (req, res) => {
 
 userRouter.post("/register", isLogged, async (req, res) => {
   const { nombre, apellido, username, password } = req.body;
+
   const user = await User.crearUsuario({
     nombre: "eduardo",
     apellido: "m",
     username: "eduardo",
     password: "12345",
+    role: username == "admincoder@coder.com" ? 'admin' : 'user'
   });
   res.redirect("/profile");
 });
