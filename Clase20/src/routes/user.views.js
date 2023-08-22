@@ -27,6 +27,7 @@ userRouter.get("/logout", protectView, async (req, res) => {
 });
 
 userRouter.get("/profile", protectView, (req, res) => {
+  console.log(req.user);
   const { nombre, apellido, username } = req.user;
   res.render("profile", { nombre, apellido, username });
 });
@@ -41,10 +42,14 @@ userRouter.post(
 );
 
 userRouter.post("/recoverPassword", async (req, res) => {
-  const { username, password } = req.body;
+  try {
+    const { username, password } = req.body;
 
-  const result = await User.recoverUserPassword(username, password);
-  res.send({ result });
+    const result = await User.recoverUserPassword(username, password);
+    res.send({ result });
+  } catch (e) {
+    res.send({ error: true, msg: e.message });
+  }
 });
 
 //

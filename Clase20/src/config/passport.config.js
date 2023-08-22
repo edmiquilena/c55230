@@ -7,6 +7,8 @@ local.Strategy;
 const InitLocalStrategy = () => {
   // * register
   passport.use(
+    ///* ||
+    //*  \/
     "register",
     new local.Strategy(
       {
@@ -42,21 +44,27 @@ const InitLocalStrategy = () => {
         // usernameField: 'email'
       },
       async (req, username, password, done) => {
-        const user = User.validarUsuario(username, password);
+        const user = await User.validarUsuario(username, password);
+        console.log(user);
         if (!user) return done("credenciales no validas!");
 
-        return done(null, user.toObject());
+        return done(null, user);
       }
     )
   );
 
   passport.serializeUser((user, done) => {
-    done(null, user._id);
+    console.log(user);
+    done(null, user.username);
   });
 
   passport.deserializeUser(async (id, done) => {
-    const user = await User.getUsuarioById(id);
-    done(null, user);
+    try {
+      const user = await User.getUsuarioByName(id);
+      done(null, user);
+    } catch (e) {
+      done(null, false);
+    }
   });
 };
 export default InitLocalStrategy;

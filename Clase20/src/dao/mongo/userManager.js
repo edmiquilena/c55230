@@ -16,7 +16,7 @@ export default class UserManager {
 
   async recoverUserPassword(username, password) {
     const user = await UserModel.findOne({ username });
-    if (!user) return false;
+    if (!user) throw new Error("Usuario no encontrado!");
 
     const salt = await bcrypt.genSalt(10);
     user.password = await bcrypt.hash(password, salt);
