@@ -44,7 +44,7 @@ export default class Router {
   }
 
   generateCustomResponses = (req, res, next) => {
-    res.sendSuccess = (data) => res.send({ error: false, data });
+    res.sendSuccess = (data) => res.send({ error: false, ...data });
 
     res.sendError = (data) => res.status(500).send({ error: true, msg: data });
     next();
