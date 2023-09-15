@@ -1,4 +1,6 @@
 import passport from "passport";
+
+// => unauthorized
 // passport.authenticate("jwt", { session: false })
 // passportMW("jwt)");
 const passportMW = (strategy) => async (req, res, next) => {

@@ -18,6 +18,7 @@ userRouter.post("/login", isLogged, async (req, res) => {
 
   delete user.password;
   delete user.salt;
+  //req.user
   req.session.user = user;
   res.redirect("/profile");
 });
@@ -41,7 +42,7 @@ userRouter.post("/register", isLogged, async (req, res) => {
     apellido: "m",
     username: "eduardo",
     password: "12345",
-    role: username == "admincoder@coder.com" ? 'admin' : 'user'
+    role: username == "admincoder@coder.com" ? "admin" : "user",
   });
   res.redirect("/profile");
 });

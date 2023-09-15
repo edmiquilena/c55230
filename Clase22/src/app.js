@@ -9,10 +9,13 @@ import passport from "passport";
 import InitLocalStrategy from "./config/passport.config.js";
 import AuthRouter from "./routes/auth.router.js";
 import APIRouter from "./routes/user.router.js";
+import cors from "cors";
+import ENV_CONFIG from "./config/config.js";
 const app = express();
+app.use(cors());
 // * configuracion de cookies
 app.use(cookieParser());
-
+// cors
 // * body
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -27,7 +30,7 @@ app.use(
     // store: new FS({ path: "./sessions" }),
     // * mongo
     store: new MongoStore({
-      mongoUrl: `mongodb://127.0.0.1:27017/coderhouse`,
+      mongoUrl: ENV_CONFIG.MONGO_URI,
       ttl: 3600,
     }),
     ttl: 3600,
@@ -47,7 +50,7 @@ app.set("view engine", "handlebars");
 
 // * mongoose
 
-mongoose.connect(`mongodb://127.0.0.1:27017/coderhouse`);
+mongoose.connect(ENV_CONFIG.MONGO_URI);
 
 // * router
 app.use("/", userRouter);

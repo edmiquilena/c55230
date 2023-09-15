@@ -4,7 +4,10 @@ import mongoose from "mongoose";
 import bcrypt from "bcrypt";
 import UserModel from "../../models/user.model.js";
 export default class UserManager {
-  constructor() {}
+  constructor() {
+
+    
+  }
 
   async getUsuarios() {
     const users = await UserModel.find();

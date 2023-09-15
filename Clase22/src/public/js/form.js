@@ -8,7 +8,7 @@ form.addEventListener("submit", async (event) => {
   data.forEach((value, key) => (obj[key] = value));
   console.log(obj);
 
-  const response = await fetch("/api/login", {
+  const response = await fetch("http://localhost:8081/api/login", {
     method: "POST",
     body: JSON.stringify(obj),
     headers: {
