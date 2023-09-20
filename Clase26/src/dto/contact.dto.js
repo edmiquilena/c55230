@@ -15,3 +15,38 @@ export class Contact {
     this.phone = contact.phoneNumber;
   }
 }
+
+
+
+
+
+
+let username = "eduardo"
+
+
+username = true;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
