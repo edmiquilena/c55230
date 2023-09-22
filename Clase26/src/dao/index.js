@@ -23,6 +23,7 @@ export let ContactsDAO;
 
 switch (config.persistence) {
   case "MONGO":
+  default:
     // *
     mongoose.connect("mongodb://127.0.0.1:27017/coder");
 
@@ -31,11 +32,5 @@ switch (config.persistence) {
     );
     console.log(contactsMongo);
     ContactsDAO = contactsMongo;
-    break;
-  case "MEM":
-  default:
-    const { default: contactsMem } = await import("./contactsDao.mem.js");
-    // * ./contactsDao.mem.js
-    ContactsDAO = contactsMem;
     break;
 }

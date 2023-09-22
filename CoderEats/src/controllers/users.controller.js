@@ -29,7 +29,7 @@ export const UserRegister = async (req, res) => {
 
 export const UserGetMe = async (req, res) => {
   try {
-    const token = req.headers["Authorization"].split(" ")[1];
+    const token = req.headers["authorization"].split(" ")[1];
     const isJWT = await jwt.verify(token, "SUPERSECRETO");
 
     const user = await UsersService.GetUserById(isJWT.sub);
